@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./assets/js/script.js"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+    <h1>Pokemon API</h1>
+    
+    <div id="search-box">
+        <label for="index" id="label">enter a number from 1-905</label>
+        <form id="search-form">
+            <input type="number" id="index" name="index" value="25" min="1" max="905" placeholder="123" required>
+            <button id="search">🔍</button>    
+        </form>
+        
+        <div>
+            <button id="previous">Previous</button>
+            <button id="reset" onClick="window.location.reload();" >Reset</button>
+            <button id="next">Next</button>
+        </div>
+    </div>
+
+    <h2 id="name-center">Name of Pokemon <span id="name-title">XXX</span> </h2>
+    <div id="image-area">
+        
+    </div>
+    <p id="name"> </p>
+
+    <h2>Moves <span id="move-title"></span></h2>
+    <div id="moves">
+
+    </div>
+</body>
+
+</html>

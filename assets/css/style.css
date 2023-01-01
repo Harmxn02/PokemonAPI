@@ -1,0 +1,165 @@
+@font-face {
+    font-family: "PokemonHollow";
+    src: url("../fonts/Pokemon Hollow.ttf");
+}
+
+@font-face {    
+    font-family: "PokemonSolid";
+    src: url("../fonts/Pokemon Solid.ttf");
+}
+
+
+:root {
+    --yellow: #ffcb05;
+    --yellow-shade: #c7a008;
+    --blue: #2a75bb;
+    --blue-shade: #3c5aa6;
+}
+
+h1 {
+    font-family: "PokemonHollow";
+    font-size: 5rem;
+    text-align: center;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--blue-shade);
+    color: var(--yellow);    
+
+
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    border: none;
+    border-radius: 5px;
+    padding: .5rem 1rem .5rem 1rem;
+
+    background-color: var(--blue);
+    color: white;
+    font-weight: 700;
+
+    transition: background-color 400ms ease-in-out;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--yellow-shade);
+}
+
+#reset {
+    background-color: rgb(215, 0, 0);
+    transition: background-color 500ms ease-in-out;
+}
+
+#reset:hover {
+    background-color: rgb(165, 0, 0);
+}
+
+
+input {
+    border: none;
+    /* border-radius: 5px; */
+    text-indent: 10px;
+    background-color: white;
+    color: var(--blue-shade);
+    min-height: 3rem;
+    font-weight: bold;
+}
+
+#search-form button {
+    background-color: white;
+    color: var(--blue-shade);
+    font-size: 1rem;
+    border-radius: 0;
+}
+
+#label {
+    color: white;
+    font-size: 1.5rem;
+}
+
+#index {
+    min-width: 10em;
+    font-size: 1.5rem;
+}
+
+#search-form {
+    margin-top: 1rem;
+    display: flex;
+}
+
+#search-box {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    max-width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#search-box div {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+
+ul {
+    list-style: decimal;
+}
+
+
+
+#name-center {
+    margin-top: 4em;
+
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#image-area {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    width: 100%;
+}
+
+#name {
+    list-style: none;
+}
+
+#name, #moves, #name-title {
+    text-transform: capitalize;
+}
+
+#moves {
+    column-count: 5;
+    color: var(--yellow-shade);    
+}
+
+#moves p {
+    transition: transform 100ms ease-in-out;
+    font-weight: 600;
+}
+
+#moves p:hover {
+    color: var(--yellow);
+    cursor: pointer;
+    transform: scale(1.025);
+}
+
+#move-title {
+    color: var(--yellow-shade);
+    font-size: 1rem;
+}
